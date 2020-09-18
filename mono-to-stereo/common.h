@@ -7,6 +7,7 @@
 #include <audioclient.h>
 #include <avrt.h>
 #include <functiondiscoverykeys_devpkey.h>
+#include <locale.h>
 
 #include "log.h"
 #include "cleanup.h"

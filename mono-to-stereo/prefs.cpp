@@ -188,6 +188,8 @@ HRESULT get_default_device(IMMDevice **ppMMDevice) {
 HRESULT list_devices() {
     HRESULT hr;
 
+    setlocale(LC_CTYPE, "");
+
     hr = list_devices_with_direction(eRender, L"render");
     if (FAILED(hr)) {
         return hr;
